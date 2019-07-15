@@ -5,7 +5,7 @@ import numpy as np
 import chillpill
 from chillpill import params, search
 
-from chillpill_examples.hp_tuning_from_train_fn import train
+from chillpill_examples.cloud_hp_tuning_from_train_fn import train
 
 
 if __name__ == '__main__':
