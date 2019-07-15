@@ -4,7 +4,7 @@ from sklearn import datasets
 from tensorflow import keras
 
 from chillpill import params, callbacks
-from chillpill_examples.hp_tuning_from_train_fn import models
+from chillpill_examples.cloud_hp_tuning_from_train_fn import models
 
 
 class MyParams(params.ParameterSet):
