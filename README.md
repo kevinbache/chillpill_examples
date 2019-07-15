@@ -1,7 +1,6 @@
 chillpill_examples
 ==================
-
-[`chillpill`](https://github.com/kevinbache/chillpill) offers a surprisingly powerful implementation of (Hyper)`ParameterSet`s which requires the minimal 
+[chillpill](https://github.com/kevinbache/chillpill) offers a surprisingly powerful implementation of (Hyper)`ParameterSet`s which requires the minimal 
 possible amount of work.
 
 This repository, `chillpill_examples` offers examples for how to use `chillpill`
@@ -15,4 +14,4 @@ Examples
 
 Authors
 -------
-`chillpill` and `chillpill_examples' were written by Kevin Bache.
+`chillpill` and `chillpill_examples` were written by Kevin Bache.
