@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 
 import chillpill
-from chillpill import params, search
+from chillpill import packages, params, search
 
 from chillpill_examples.cloud_hp_tuning_from_train_fn import train
 
@@ -31,9 +31,8 @@ if __name__ == '__main__':
     # Run hyperparameter search job
     search.run_from_train_fn(
         train_fn=train.train_fn,
-        additional_package_root_dirs=[Path(chillpill.__file__).parent.parent],
+        additional_package_root_dirs=[str(packages.find_package_root(chillpill))],
         cloud_staging_bucket='chillpill-staging-bucket',
         gcloud_project_name='kb-experiment',
         region='us-central1',
     )
-
