@@ -29,9 +29,8 @@ if __name__ == '__main__':
     search.add_parameters(my_param_ranges)
 
     # Run hyperparameter search job
-    search.run_from_trian_fn(
+    search.run_from_train_fn(
         train_fn=train.train_fn,
-        train_params_type=train.MyParams,
         additional_package_root_dirs=[Path(chillpill.__file__).parent.parent],
         cloud_staging_bucket='chillpill-staging-bucket',
         gcloud_project_name='kb-experiment',
